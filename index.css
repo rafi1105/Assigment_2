@@ -16,6 +16,9 @@
     --font-2: "Noto Serif";
 }
 header {
+    img{
+        height: 82px; width:135px;
+    }
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,8 +26,7 @@ header {
     height: 71px;
     margin: 30px auto;
     max-width: 1140px;
-}
-a:nth-child(1) {
+    a:nth-child(1) {
     color: var(--text-color);
     font-weight: 600;
     color:black;
@@ -33,6 +35,8 @@ a {
     color: #8987A1;
     font-size: 18px;
 }
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -362,8 +366,14 @@ p{
             text-align: center;
         }
     }
-    a {
-        display: none;
+    header  {
+        img{
+            width: 90px;
+            height: 50px;
+        }
+        a{
+            display: none;
+        }
     }
     .hero {
         flex-direction: column-reverse;
@@ -519,12 +529,18 @@ p{
             }
         }
         .footer-links, .footer-feature {
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-align: left;
             li {
-            font-size: 0.9rem;
-            display: none;
+                margin-bottom: 30px;
+                font-size: 0.9rem;
+            }
+           
+           
             }
         }
         .social-media {
@@ -533,5 +549,5 @@ p{
             display: flex;
             gap: 16px;
         }
+      
     }
-}
