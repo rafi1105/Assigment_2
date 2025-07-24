@@ -63,7 +63,7 @@ span {
 p{
     font-family: var(--font-1);
     font-weight: 400;
-    font-size: medium;
+    font-size: 18px;
     line-height: 1.5;
     color: var(--text-color)
 }
@@ -155,6 +155,86 @@ p{
         }
     }
 }
+.deals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:16px;
+    text-align: center;
+}
+.deals-1{
+    grid-area: deals-1;
+    background-image: url("./B12A02-Responsive-Flowers/assets/deal-bloom.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    width: 367px;
+    height: 197px;
+  
+}
+.deals-2{
+    grid-area: deals-2;
+    background-image: url("./B12A02-Responsive-Flowers/assets/deal-zabo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 753px;
+    height: 423.13px;
+    color: white;
+}
+.deals-3{
+    grid-area: deals-3;
+    background-image: url("./B12A02-Responsive-Flowers/assets/deal-ana.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 367px;
+    height: 197px;
+}
+.shop{
+    background-color: #00000049;
+    width: 367px;
+    height: 197px;
+      h3{
+        font-size: 1.3rem;
+    }
+}
+.shop1{
+    background-color: #00000049;
+    width: 753px;
+    height: 423.13px;
+      h3{
+        font-size: 1.6rem;
+    }
+}
+.deals-1, .deals-2, .deals-3, .shop, .shop1{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    p{
+        text-decoration: underline;
+        color:white;
+        font-weight: 600;
+    }
+    h3{
+        font-family: var(--font-1);
+        font-weight: 600;
+        color: white;
+        margin-bottom: 10px;
+    }
+}
+.deals-section{
+    display: grid;
+    grid-template-areas: "deals-1 deals-2"
+                         "deals-3 deals-2";
+    gap: 20px;
+    max-width: 1140px;
+    margin: 50px auto;
+}
 @media screen and (max-width: 567px) {
     h1,h2{
         font-size: 2rem;
@@ -201,6 +281,24 @@ p{
             height: 195px;
         }
         
+    }
+    }
+    
+    .deals-section{
+    display: grid;
+    grid-template-areas: "deals-1"
+                         "deals-3 "
+                         "deals-2";
+    gap: 20px;
+    .deals-1, .deals-2, .deals-3, .shop, .shop1{
+        width: 100%;
+        height: 200px;
+        h3{
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: 0.8rem;
+        }
     }
     }
 }
