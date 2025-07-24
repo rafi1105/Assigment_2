@@ -510,6 +510,18 @@ p{
         form{
             width: 300px;
             height: 50px;
+            input{
+                width: 80%;
+                height: 100%;
+                padding: 8px 20px;
+                border: none;
+            }
+            button{
+                width: 50%;
+                height: 50px;
+                font-size: .9rem;
+                font-weight: 500;
+            }
         }
     }
     .footer {
