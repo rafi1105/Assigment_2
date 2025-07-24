@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    text-decoration: none;
+}
+:root {
+    --primary-color: #E95A08;
+    --secondary-color: #f0f0f0;
+    --text-color: #00000083;
+   
+    --font-1: "Inter";
+    --font-2: "Noto Serif";
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+    height: 71px;
+    margin: auto;
+    max-width: 1140px;
+}
+a:nth-child(1) {
+    color: var(--text-color);
+    font-weight: 600;
+}
+a {
+    color: #8987A1;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 22px 0;
+    color: black;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+h1,h2{
+    font-family: var(--font-2);
+    font-weight: 700;
+    font-size: 4rem;
+}
+span {
+    color: var(--primary-color);
+     font-weight: 700;
+}
+p{
+    font-family: var(--font-1);
+    font-weight: 400;
+    font-size: medium;
+    line-height: 1.5;
+    color: var(--text-color)
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    margin: 120px auto;
+    max-width: 1140px;
+    max-height: 460px;
+}
+.plants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:50px;
+    h2 {
+        font-size: 50px;
+    }
+}
+.plant-grid{
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    gap: 20px;
+    .plant-card{
+    h3,p{
+        font-family: var(--font-1);
+        font-weight: 500;
+        font-size: 1.2rem;
+        color:black;
+    }
+    button{
+        background-color: var(--primary-color);
+       font-family: var(--font-1);
+        text-align: center;
+        width: 270px;
+        border: none;
+        width: 100%;
+        color: white;
+        height: 50px;
+        font-size: .9rem;
+        cursor: pointer;
+    }
+    }
+    margin-bottom: 100px;
+    }
+@media screen and (max-width: 567px) {
+    body{
+        margin: auto;
+    }
+    a{
+        display: none;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .text {
+        
+    }
+    .plant-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .text {
+        margin-bottom: 20px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    
+}
